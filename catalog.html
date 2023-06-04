@@ -19,7 +19,7 @@
             <a class="header-link" href="#">О Седоне</a>
           </li>
           <li class="header-item">
-            <a class="header-link" href="#">Гостиницы</a>
+            <a class="header-link" href="./catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -52,17 +52,13 @@
     <main class="page-main">
       <section class="main-section">
        <div class="section-content">
-        <h1 class="visually-hidden">Гостиницы Седона</h1>
+        <h1 class="catalog-header">Гостиницы Седона</h1>
           <ul class="breadcrumbs-list">
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">
-                <span class="visually-hidden">Главная страница</span>
-              </a>
+              <a class="breadcrumbs-link" href="./index.html">Главная страница</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">
-                Гостиницы
-              </a>
+              <a class="breadcrumbs-link" href="./catalog.html">Гостиницы</a>
             </li>
           </ul>
         </div>
@@ -105,16 +101,18 @@
 
         <fieldset class="search-form-section">
           <legend class="search-form-section-title">Стоимость,₽</legend>
-            <input class="price-input" type="number" id="from" name="from">
-            <label class="price-input-name" for="from">0</label>
-            <input class="price-input" type="number" id="to" name="to">
-            <label class="price-input-name" for="to">9000</label>
-        </fieldset>
 
-        <div class="range-bar">
-          <div class="range-button-left"></div>
-          <div class="range-button-right"></div>
-        </div>
+          <input class="price-input" type="number" id="from" name="from">
+          <label class="price-input-name" for="from">0</label>
+
+          <input class="price-input" type="number" id="to" name="to">
+          <label class="price-input-name" for="to">9000</label>
+
+          <div class="range-bar">
+            <div class="range-button-left"></div>
+            <div class="range-button-right"></div>
+          </div>
+        </fieldset>
 
         <fieldset class="search-form-section">
           <button class="submit-button" type="submit">Применить</button>
@@ -125,7 +123,7 @@
 
       <section class="search-results-section">
         <div class="search-results-header">
-          <h2 class="search-results-title">Найдено гостиниц:38</h2>
+          <h2 class="search-results-title">Найдено гостиниц: 38</h2>
           <div class="search-results-settings">
             <select class="search-results-sorting" id="type-hotel">
               <option value="cheap">Сначала дешевые</option>
@@ -133,16 +131,22 @@
             </select>
             <ul class="search-results-change-view">
               <li class="change-view-item">
-                <input class="change-view-input" name="view" type="radio" id="first-view" value="first-view" checked>
-                <label class="visually-hidden" for="first-view">tiles</label>
+                <a class="change-view-button" href="#">
+                  <span class="visually-hidden">tiles</span>
+                  <img src="#" alt="Иконка-плитка">
+                </a>
               </li>
               <li class="change-view-item">
-                <input class="change-view-input" name="view" type="radio" id="second-view" value="second-view">
-                <label class="visually-hidden" for="second-view">window</label>
+                <a class="change-view-button" href="#">
+                  <span class="visually-hidden">window</span>
+                  <img src="#" alt="Иконка-окошко">
+                </a>
               </li>
               <li class="change-view-item">
-                <input class="change-view-input" name="view" type="radio" id="third-view" value="third-view">
-                <label class="visually-hidden" for="third-view">list</label>
+                <a class="change-view-button" href="#">
+                  <span class="visually-hidden">list</span>
+                  <img src="#" alt="Иконка-список">
+                </a>
               </li>
             </ul>
           </div>
@@ -156,14 +160,12 @@
                 <h3 class="product-name">Amara Resort&Spa</h3>
               </a>
               <p class="product-description">
-                <a class="product-link-wrapper" href="#">
-                  <span class="product-type">Гостиница</span>
-                  <span class="product-price">От 4000 ₽</span>
-                </a>
+                <span class="product-type">Гостиница</span>
+                <span class="product-price">От 4000 ₽</span>
               </p>
               <div class="product-buttons">
                 <a class="product-about-link" href="#">Подробнее</a>
-                <button class="product-favourite" type="button">В избранное</button>
+                <a class="product-favourite-link" href="#">В избранное</a>
               </div>
               <div class="raiting-wrapper">
               <ul class="raiting-list">
@@ -187,9 +189,7 @@
               </div>
             </article>
           </li>
-        </ul>
 
-        <ul class="product-list">
           <li class="product-list-item">
             <article class="product-card">
               <a class="product-link-wrapper" href="#">
@@ -197,14 +197,12 @@
                 <h3 class="product-name">Villas at Poco Diablo</h3>
               </a>
               <p class="product-description">
-                <a class="product-link-wrapper" href="#">
-                  <span class="product-type">Гостиница</span>
-                  <span class="product-price">От 5000 ₽</span>
-                </a>
+                <span class="product-type">Гостиница</span>
+                <span class="product-price">От 5000 ₽</span>
               </p>
               <div class="product-buttons">
                 <a class="product-about-link" href="#">Подробнее</a>
-                <button class="product-my-favourite" type="button">В избранном</button>
+                <a class="product-my-favourite-link" href="#">В избранном</a>
               </div>
 
               <div class="raiting-wrapper">
@@ -230,9 +228,7 @@
               </div>
             </article>
           </li>
-        </ul>
 
-        <ul class="product-list">
           <li class="product-list-item">
             <article class="product-card">
               <a class="product-link-wrapper" href="#">
@@ -240,14 +236,12 @@
                 <h3 class="product-name">Desert Quail Inn</h3>
               </a>
               <p class="product-description">
-                <a class="product-link-wrapper" href="#">
-                  <span class="product-type">Гостиница</span>
-                  <span class="product-price">От 2500 ₽</span>
-                </a>
+                <span class="product-type">Гостиница</span>
+                <span class="product-price">От 2500 ₽</span>
               </p>
               <div class="product-buttons">
                 <a class="product-about-link" href="#">Подробнее</a>
-                <button class="product-favourite" type="button">В избранное</button>
+                <a class="product-favourite-link" href="#">В избранное</a>
               </div>
               <div class="raiting-wrapper">
               <ul class="raiting-list">
@@ -271,9 +265,7 @@
               </div>
             </article>
           </li>
-        </ul>
 
-        <ul class="product-list">
           <li class="product-list-item">
             <article class="product-card">
               <a class="product-link-wrapper" href="#">
@@ -281,14 +273,12 @@
                 <h3 class="product-name">GreenTree Inn</h3>
               </a>
               <p class="product-description">
-                <a class="product-link-wrapper" href="#">
-                  <span class="product-type">Гостиница</span>
-                  <span class="product-price">От 1500 ₽</span>
-                </a>
+                <span class="product-type">Гостиница</span>
+                <span class="product-price">От 1500 ₽</span>
               </p>
               <div class="product-buttons">
                 <a class="product-about-link" href="#">Подробнее</a>
-                <button class="product-favourite" type="button">В избранное</button>
+                <a class="product-favourite-link" href="#">В избранное</a>
               </div>
               <div class="raiting-wrapper">
               <ul class="raiting-list">
@@ -315,7 +305,7 @@
         </ul>
 
         <nav class="pagination-wrapper">
-          <ol class="pagination-list">
+          <ul class="pagination-list">
             <li class="pagination-item">
               <a class="pagination-link current-page" href="./catalog.html">1</a>
             </li>
@@ -334,7 +324,7 @@
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
             </li>
-          </ol>
+          </ul>
         </nav>
       </section>
     </main>
@@ -381,8 +371,8 @@
         </li>
       </ul>
 
-      <a class="footer-tel" href="tel:+78121212">
-        +7 (812)-12-12
+      <a class="footer-tel" href="tel:+78128121212">
+        +7 (812)-812-12-12
       </a>
 
       <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
