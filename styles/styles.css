@@ -169,8 +169,8 @@ h2 + p {
   justify-content: center;
 }
 
-.advantages-list li:first-child,
-.advantages-list li:last-child {
+.advantages-list .advantages-item-image-right,
+.advantages-list .advantages-item-image-left {
   color: #ffffff;
   background-color: #82b3d3;
   display: flex;
@@ -352,10 +352,6 @@ h2 + p {
   line-height: 78px;
   color: #ffffff;
   margin: 0;
-}
-
-.section-content {
-  padding: 35px 70px 0 0;
 }
 
 .breadcrumbs-link {
@@ -620,10 +616,13 @@ h2 + p {
   border-radius: 4px;
 }
 
+.pagination-wrapper {
+  margin: 80px 0 60px 0;
+}
+
 .pagination-list {
   display: flex;
   justify-content: flex-start;
-  margin: 80px 0 60px 0;
 }
 
 .pagination-list .pagination-item {
