@@ -29,10 +29,6 @@
   overflow: hidden;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -70,6 +66,8 @@ html {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .header-menu .header-item {
@@ -91,6 +89,8 @@ html {
   display: flex;
   align-items: center;
   margin: 0 0 0 auto;
+  list-style: none;
+  padding: 0;
 }
 
 .header-buttons-list .button-item {
@@ -156,6 +156,7 @@ h2 + p {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
+  advantages-list
 }
 
 .advantages-list .advantages-item {
@@ -222,6 +223,7 @@ h2 + p {
   color: #000000;
   display: flex;
   padding: 0;
+  list-style: none;
 }
 
 .benefits-list li {
@@ -363,6 +365,18 @@ h2 + p {
 
 .breadcrumbs-list {
   display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.infrastructure-list {
+  list-style: none;
+  padding: 0;
+}
+
+.home-type-list {
+  list-style: none;
+  padding: 0;
 }
 
 .search-form {
@@ -444,6 +458,8 @@ h2 + p {
 .search-results-change-view {
   display: flex;
   margin: 0 0 0 70px;
+  list-style: none;
+  padding: 0;
 }
 
 .search-form {
@@ -531,6 +547,8 @@ h2 + p {
   display: flex;
   width: 140px;
   align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
 .rating-list .rating-star {
@@ -542,6 +560,8 @@ h2 + p {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
+  list-style: none;
+  padding: 0;
 }
 
 .product-list-item {
@@ -623,6 +643,8 @@ h2 + p {
 .pagination-list {
   display: flex;
   justify-content: flex-start;
+  list-style: none;
+  padding: 0;
 }
 
 .pagination-list .pagination-item {
