@@ -125,6 +125,7 @@ html {
   background-color: #756157;
   padding: 8px 34px;
   border-radius: 4px;
+  display: block;
 }
 
 .section-about {
@@ -442,12 +443,12 @@ h2 + p {
 }
 
 #from {
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
   margin-right: 2px;
 }
 
 #to {
-  border-radius: 0px 4px 4px 0px;
+  border-radius: 0 4px 4px 0;
 }
 
 .price-input-name {
@@ -576,10 +577,8 @@ h2 + p {
 }
 
 .product-list-item {
-  border: 1px solid #E6E6E6;
+  outline: 1px solid #E6E6E6;
   padding: 20px;
-  max-width: 338px;
-
 }
 
 .product-link-wrapper {
