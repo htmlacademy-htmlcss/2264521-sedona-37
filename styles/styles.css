@@ -930,7 +930,7 @@ h2 + p {
 .submit-button:hover, .submit-button:focus,
 .submit-button-catalog:hover, .submit-button-catalog:focus,
 .product-favorite-link:hover, .product-favorite-link:focus,
-.pagination-link:hover, pagination-link:focus {
+.pagination-link:hover, .pagination-link:focus {
   background-color: #68a2ca;
 }
 
