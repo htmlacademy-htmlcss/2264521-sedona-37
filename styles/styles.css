@@ -114,7 +114,7 @@ html {
   position: relative;
 }
 
-.header-buttons-list .button-favorite .counter {
+.button-favorite .counter {
   font-size: 10px;
   left: 8px;
   top: -11px;
@@ -219,7 +219,7 @@ h2 + p {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantages-list .advantages-item .advantages-wrapper {
+.advantages-item .advantages-wrapper {
   display: flex;
   width: 230px;
   flex-direction: column;
@@ -970,7 +970,7 @@ h2 + p {
   fill: #68A2CA;
 }
 
-.social-link:active svg path {
+.social-link:active path {
   fill: #68A2CA4D;
 }
 .footer-tel:hover, .footer-tel:focus {
@@ -981,11 +981,11 @@ h2 + p {
   color: #7561574D
 }
 
-.footer-logo-htmlacademy:hover svg path,
-.footer-logo-htmlacademy:focus svg path {
+.footer-logo-htmlacademy:hover path,
+.footer-logo-htmlacademy:focus path {
   fill: #756157;
 }
 
-.footer-logo-htmlacademy:active svg path {
+.footer-logo-htmlacademy:active path {
   fill: #7561574D;
 }
