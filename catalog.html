@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -60,7 +61,7 @@
                       <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
                     </g>
                   </svg>
-                  <span class="visually-hidden">Главная страница</span>
+                  <span class="visually-hidden">Главная страница.</span>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -113,12 +114,12 @@
 
               <div class="price-wrapper">
                 <div class="price-input-wrapper">
-                  <input class="price-input" type="number" id="from" name="from" min="0">
+                  <input class="price-input from" type="number" id="from" name="from" min="0">
                   <label class="price-input-name" for="from">от</label>
                 </div>
 
                 <div class="price-input-wrapper">
-                  <input class="price-input" type="number" id="to" name="to" min="0">
+                  <input class="price-input to" type="number" id="to" name="to" min="0">
                   <label class="price-input-name" for="to">до</label>
                 </div>
               </div>
@@ -155,19 +156,19 @@
               <ul class="search-results-change-view">
                 <li class="change-view-item">
                   <a class="change-view-button selected-view" href="#">
-                    <span class="visually-hidden">tiles.</span>
+                    <span class="visually-hidden">Плитка.</span>
                     <img class="change-icons" src="./images/icons/icon-tiles.svg" width="16" height="14" alt="Иконка-плитка.">
                   </a>
                 </li>
                 <li class="change-view-item">
                   <a class="change-view-button" href="#">
-                    <span class="visually-hidden">window.</span>
+                    <span class="visually-hidden">Карточки.</span>
                     <img class="change-icons" src="./images/icons/icon-window.svg" width="16" height="14" alt="Иконка-окошко.">
                   </a>
                 </li>
                 <li class="change-view-item">
                   <a class="change-view-button" href="#">
-                    <span class="visually-hidden">list.</span>
+                    <span class="visually-hidden">Список.</span>
                     <img class="change-icons" src="./images/icons/icon-list.svg" width="16" height="14" alt="Иконка-список.">
                   </a>
                 </li>
@@ -353,15 +354,15 @@
       </main>
 
       <footer class="main-footer">
-        <section class="mailing-list ">
+        <section class="mailing-list no-picture">
           <div class="mailing-list-wrapper">
-            <h2 class="mailing-list-header about-page">Подпишитесь на рассылку</h2>
+            <h2 class="mailing-list-header about-page heading-level-two">Подпишитесь на рассылку</h2>
             <p class="mailing-list-text about-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form  class="mailing-list-form" action="https://echo.htmlacademy.ru">
               <label class="visually-hidden" for="email">
                 Ваш e-mail.
               </label>
-              <input class="input-email" type="email" id="email" name="email" placeholder="Ваш e-mail">
+              <input class="input-email" type="email" id="email" name="email" placeholder="Ваш e-mail" required>
               <button class="submit-button" type="submit">
                 Подписаться
               </button>
