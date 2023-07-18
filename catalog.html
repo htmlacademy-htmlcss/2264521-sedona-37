@@ -9,7 +9,7 @@
 
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="main-logo" href="/">
             <img src="./images/icons/logo-header.svg" width="140" height="70" alt="Логотип Седона.">
@@ -49,103 +49,103 @@
 
       <main class="page-main">
         <section class="main-section">
-        <div class="section-content">
-          <h1 class="catalog-header">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="./index.html">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="Vector">
-                      <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                        fill="white" />
-                      <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
-                    </g>
-                  </svg>
-                  <span class="visually-hidden">Главная страница.</span>
-                </a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="./catalog.html">Гостиницы</a>
-              </li>
-            </ul>
+          <div class="section-content">
+            <h1 class="catalog-header">Гостиницы Седоны</h1>
+              <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="./index.html">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                          fill="white" />
+                        <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
+                      </g>
+                    </svg>
+                    <span class="visually-hidden">Главная страница.</span>
+                  </a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="./catalog.html">Гостиницы</a>
+                </li>
+              </ul>
           </div>
 
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET" data-test="filter">
+            <div class="search-form-wrapper">
+              <fieldset class="search-form-section">
+                <legend class="search-form-section-title">Инфраструктура:</legend>
+                <ul class="infrastructure-list">
+                  <li class="infrastructure-item">
+                    <input class="infrastructure-input visually-hidden" type="checkbox" id="pool-checkbox" name="infrastructure" value="pool" checked>
+                    <label class="infrastructure-name" for="pool-checkbox">Бассейн</label>
+                  </li>
+                  <li class="infrastructure-item">
+                    <input class="infrastructure-input  visually-hidden" type="checkbox" id="parking-checkbox" name="infrastructure" value="parking" checked>
+                    <label class="infrastructure-name" for="parking-checkbox">Парковка</label>
+                  </li>
+                  <li class="infrastructure-item">
+                    <input class="infrastructure-input  visually-hidden" type="checkbox" id="wifi-checkbox" name="infrastructure" value="wifi">
+                    <label class="infrastructure-name" for="wifi-checkbox">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="search-form-section">
+                <legend class="search-form-section-title">Тип жилья:</legend>
+                <ul class="home-type-list">
+                  <li class="home-type-item">
+                    <input class="home-type-input visually-hidden" name="home-type" type="radio" id="hotel-radio" value="hotel" checked>
+                    <label class="home-type-name" for="hotel-radio">Гостиница</label>
+                  </li>
+                  <li class="home-type-item">
+                    <input class="home-type-input visually-hidden" name="home-type" type="radio" id="motel-radio" value="motel">
+                    <label class="home-type-name" for="motel-radio">Мотель</label>
+                  </li>
+                  <li class="home-type-item">
+                    <input class="home-type-input visually-hidden" name="home-type" type="radio" id="apartment-radio" value="apartment">
+                    <label class="home-type-name" for="apartment-radio">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+          </div>
+
           <div class="search-form-wrapper">
             <fieldset class="search-form-section">
-              <legend class="search-form-section-title">Инфраструктура:</legend>
-              <ul class="infrastructure-list">
-                <li class="infrastructure-item">
-                  <input class="infrastructure-input visually-hidden" type="checkbox" id="pool-checkbox" name="infrastructure" value="pool" checked>
-                  <label class="infrastructure-name" for="pool-checkbox">Бассейн</label>
-                </li>
-                <li class="infrastructure-item">
-                  <input class="infrastructure-input  visually-hidden" type="checkbox" id="parking-checkbox" name="infrastructure" value="parking" checked>
-                  <label class="infrastructure-name" for="parking-checkbox">Парковка</label>
-                </li>
-                <li class="infrastructure-item">
-                  <input class="infrastructure-input  visually-hidden" type="checkbox" id="wifi-checkbox" name="infrastructure" value="wifi">
-                  <label class="infrastructure-name" for="wifi-checkbox">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="search-form-section">
-              <legend class="search-form-section-title">Тип жилья:</legend>
-              <ul class="home-type-list">
-                <li class="home-type-item">
-                  <input class="home-type-input visually-hidden" name="home-type" type="radio" id="hotel-radio" value="hotel" checked>
-                  <label class="home-type-name" for="hotel-radio">Гостиница</label>
-                </li>
-                <li class="home-type-item">
-                  <input class="home-type-input visually-hidden" name="home-type" type="radio" id="motel-radio" value="motel">
-                  <label class="home-type-name" for="motel-radio">Мотель</label>
-                </li>
-                <li class="home-type-item">
-                  <input class="home-type-input visually-hidden" name="home-type" type="radio" id="apartment-radio" value="apartment">
-                  <label class="home-type-name" for="apartment-radio">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-        </div>
+                <legend class="search-form-section-title">Стоимость,₽</legend>
 
-        <div class="search-form-wrapper">
-          <fieldset class="search-form-section">
-              <legend class="search-form-section-title">Стоимость,₽</legend>
+                <div class="price-wrapper">
+                  <div class="price-input-wrapper">
+                    <input class="price-input from" type="number" id="from" name="from" min="0">
+                    <label class="price-input-name" for="from">от</label>
+                  </div>
 
-              <div class="price-wrapper">
-                <div class="price-input-wrapper">
-                  <input class="price-input from" type="number" id="from" name="from" min="0">
-                  <label class="price-input-name" for="from">от</label>
+                  <div class="price-input-wrapper">
+                    <input class="price-input to" type="number" id="to" name="to" min="0">
+                    <label class="price-input-name" for="to">до</label>
+                  </div>
                 </div>
 
-                <div class="price-input-wrapper">
-                  <input class="price-input to" type="number" id="to" name="to" min="0">
-                  <label class="price-input-name" for="to">до</label>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 10px; width: 220px;">
+                    <button type="button" class="range-button range-button-left">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+
+                    <button type="button" class="range-button range-button-right">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </fieldset>
 
-              <div class="range-scale">
-                <div class="range-bar" style="left: 10px; width: 220px;">
-                  <button type="button" class="range-button range-button-left">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-
-                  <button type="button" class="range-button range-button-right">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="search-form-section search-form-section-buttons">
-              <button class="submit-button-catalog" type="submit">Применить</button>
-              <button class="reset-button" type="reset">Сбросить</button>
-            </fieldset>
-        </div>
-        </form>
+              <fieldset class="search-form-section search-form-section-buttons">
+                <button class="submit-button-catalog" type="submit">Применить</button>
+                <button class="reset-button" type="reset">Сбросить</button>
+              </fieldset>
+            </div>
+          </form>
         </section>
 
-        <section class="search-results-section">
+        <section class="search-results-section" data-test="catalog">
           <div class="search-results-header">
             <h2 class="search-results-title">Найдено гостиниц: 38</h2>
             <div class="search-results-settings">
@@ -354,7 +354,7 @@
       </main>
 
       <footer class="main-footer">
-        <section class="mailing-list no-picture">
+        <section class="mailing-list no-picture" data-test="subscribe">
           <div class="mailing-list-wrapper">
             <h2 class="mailing-list-header about-page heading-level-two">Подпишитесь на рассылку</h2>
             <p class="mailing-list-text about-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -370,7 +370,7 @@
           </div>
         </section>
 
-        <div class="social-list-wrapper">
+        <div class="social-list-wrapper" data-test="footer">
           <ul class="social-list">
               <li class="social-list-item">
                 <a class="social-link" href=" https://vk.com/htmlacademy">

@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon.png">
   </head>
 
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="main-logo" href="/">
             <img src="./images/icons/logo-header.svg" width="140" height="70" alt="Логотип Седона.">
@@ -47,96 +47,100 @@
         </nav>
       </header>
 
-      <main class="page-main">
-        <section class="section-hero">
+      <div class="page-main">
+        <section class="section-hero" data-test="hero">
           <h1 class="visually-hidden">Седона.</h1>
           <img class="welcome-svg" src="./images/icons/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
         </section>
 
-        <section class="section-about">
-          <h2 class="about-page heading-level-two">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="about-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </section>
+        <div data-test="advantages-image">
+          <section class="section-about">
+            <h2 class="about-page heading-level-two">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <p class="about-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </section>
 
-        <section class="section-advantages">
-          <h2 class="visually-hidden">Преимущества.</h2>
-          <ul class="advantages-list">
-            <li class="advantages-item advantages-item-image-right">
-              <div class="advantages-wrapper">
-                <h3 class="advantages-title">Настоящий городок</h3>
-                <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-              </div>
-              <img class="advantages-image" src="./images/photo-1.jpg" width="800" height="385" alt="Фотография дома с балконом и цветами.">
-            </li>
-            <li class="advantages-item">
-              <div class="advantages-wrapper">
-                <h3 class="advantages-title">Небольшая площадь</h3>
-                <p class="advantages-text">Все достопримечательности находятся очень близко</p>
+          <section class="section-advantages">
+            <h2 class="visually-hidden">Преимущества.</h2>
+            <ul class="advantages-list">
+              <li class="advantages-item advantages-item-image-right">
+                <div class="advantages-wrapper">
+                  <h3 class="advantages-title">Настоящий городок</h3>
+                  <p class="advantages-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                </div>
+                <img class="advantages-image" src="./images/photo-1.jpg" width="800" height="385" alt="Фотография дома с балконом и цветами.">
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-wrapper">
+                  <h3 class="advantages-title">Небольшая площадь</h3>
+                  <p class="advantages-text">Все достопримечательности находятся очень близко</p>
 
-              </div>
-            </li>
-            <li class="advantages-item advantages-item-lightgray ">
-              <div class="advantages-wrapper">
-                <h3 class="advantages-title">Красивая<br>дорога</h3>
-                <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+              </li>
+              <li class="advantages-item advantages-item-lightgray ">
+                <div class="advantages-wrapper">
+                  <h3 class="advantages-title">Красивая<br>дорога</h3>
+                  <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 
-              </div>
-            </li>
-            <li class="advantages-item">
-              <div class="advantages-wrapper">
-                <h3 class="advantages-title">Мало <br> туристов</h3>
-                <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
+              </li>
+              <li class="advantages-item">
+                <div class="advantages-wrapper">
+                  <h3 class="advantages-title">Мало <br> туристов</h3>
+                  <p class="advantages-text">Большинство едет в Гранд Каньон и толпится там</p>
 
-              </div>
-            </li>
-            <li class="advantages-item advantages-item-image-left">
-              <img class="advantages-image" src="./images/photo-2.jpg" width="800" height="385" alt="Фотография каньона.">
-              <div class="advantages-wrapper">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
-                <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-              </div>
-            </li>
-          </ul>
-        </section>
+                </div>
+              </li>
+              <li class="advantages-item advantages-item-image-left">
+                <img class="advantages-image" src="./images/photo-2.jpg" width="800" height="385" alt="Фотография каньона.">
+                <div class="advantages-wrapper">
+                  <h3 class="advantages-title">Там есть мост дьявола</h3>
+                  <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
 
-        <section class="promo-text">
-          <h2 class="promo-about-page heading-level-two">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="promo-about-text about-text">Опытный персонал и качественное обслуживание!</p>
-        </section>
+        <div data-test="service">
+          <section class="promo-text">
+            <h2 class="promo-about-page heading-level-two">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+            <p class="promo-about-text about-text">Опытный персонал и качественное обслуживание!</p>
+          </section>
 
-        <section class="further-benefits">
-          <h2 class="visually-hidden">Дополнительные преимущества.</h2>
-          <ul class="benefits-list">
-            <li class="benefits-item-blue">
-              <img class="benefits-icons" src="./images/icons/icon-home.svg" width="75" height="72" alt="Иконка домика.">
-              <h3 class="benefits-title">Жилье</h3>
-              <p class="about-benefits">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="benefits-item-white">
-              <img class="benefits-icons" src="./images/icons/food.svg" width="75" height="72" alt="Иконка бургера.">
-              <h3 class="benefits-title">Еда</h3>
-              <p class="about-benefits">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="benefits-item-blue">
-              <img class="benefits-icons" src="./images/icons/icon-gift.svg" width="75" height="72" alt="Иконка подарка.">
-              <h3 class="benefits-title">Сувениры</h3>
-              <p class="about-benefits">Не только китайского, но и настоящего местного производства!</p>
-            </li>
-          </ul>
-        </section>
+          <section class="further-benefits">
+            <h2 class="visually-hidden">Дополнительные преимущества.</h2>
+            <ul class="benefits-list">
+              <li class="benefits-item-blue">
+                <img class="benefits-icons" src="./images/icons/icon-home.svg" width="75" height="72" alt="Иконка домика.">
+                <h3 class="benefits-title">Жилье</h3>
+                <p class="about-benefits">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
+              <li class="benefits-item-white">
+                <img class="benefits-icons" src="./images/icons/food.svg" width="75" height="72" alt="Иконка бургера.">
+                <h3 class="benefits-title">Еда</h3>
+                <p class="about-benefits">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="benefits-item-blue">
+                <img class="benefits-icons" src="./images/icons/icon-gift.svg" width="75" height="72" alt="Иконка подарка.">
+                <h3 class="benefits-title">Сувениры</h3>
+                <p class="about-benefits">Не только китайского, но и настоящего местного производства!</p>
+              </li>
+            </ul>
+          </section>
+        </div>
 
-        <section class="booking">
+        <section class="booking" data-test="search">
           <div class="booking-wrapper">
             <h2 class="about-page heading-level-two">Заинтересовались?</h2>
             <p class="about-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="button-hotel-search" href="#">Поиск гостиницы в Седоне</a>
           </div>
         </section>
-      </main>
+      </div>
 
       <footer class="main-footer">
         <section class="mailing-list ">
-          <div class="mailing-list-wrapper">
+          <div class="mailing-list-wrapper" data-test="subscribe">
             <h2 class="mailing-list-header about-page heading-level-two">Подпишитесь на рассылку</h2>
             <p class="mailing-list-text about-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form  class="mailing-list-form" action="https://echo.htmlacademy.ru">
@@ -151,7 +155,7 @@
           </div>
         </section>
 
-        <div class="social-list-wrapper">
+        <div class="social-list-wrapper" data-test="footer">
           <ul class="social-list">
               <li class="social-list-item">
                 <a class="social-link" href=" https://vk.com/htmlacademy">
@@ -203,7 +207,7 @@
 
     <div class="modal-container">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть.</span>
         </button>
         <section class="modal-content">
@@ -212,14 +216,14 @@
             <div class="field-group">
               <label class="date-label" for="arrival-date">Дата Заезда:</label>
               <div class="date-input-wrapper">
-                <input class="date-input" type="text" id="arrival-date" required placeholder="1 сентября 2023">
+                <input class="date-input" type="text" name="arrival-date" id="arrival-date" required placeholder="1 сентября 2023">
                 <span class="error-text input-message">Мы не можем отправить вас в прошлое.</span>
               </div>
             </div>
             <div class="field-group">
               <label class="date-label" for="departure-date">Дата Выезда:</label>
               <div class="date-input-wrapper">
-                <input class="date-input" type="text" id="departure-date" required placeholder="1 сентября 2023">
+                <input class="date-input" type="text" name="departure-date" id="departure-date" required placeholder="1 сентября 2023">
                 <span class="info-text input-message">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </div>
@@ -234,7 +238,7 @@
                     </svg>
                     <span class="visually-hidden">Меньше.</span>
                   </button>
-                  <input id="adult-count" class="input-count-people" type="number" required placeholder="1">
+                  <input id="adult-count" name="adult-count" class="input-count-people" type="number" required placeholder="1">
                   <button class="button-plus count-button" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
@@ -262,7 +266,7 @@
 
                     <span class="visually-hidden">Меньше.</span>
                   </button>
-                  <input id="child-count" class="input-count-people" type="number" placeholder="0">
+                  <input id="child-count" name="child-count" class="input-count-people" type="number" placeholder="0">
                   <button class="button-plus count-button" type="button">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
