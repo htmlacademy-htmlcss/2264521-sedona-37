@@ -9,7 +9,7 @@
 
   <body>
     <div class="container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="main-logo" href="/">
             <img src="./images/icons/logo-header.svg" width="140" height="70" alt="Логотип Седона.">
@@ -30,14 +30,19 @@
             <li class="button-item">
               <a class="button-search" href="#">
                 <span class="visually-hidden">Поиск.</span>
-                <img class="search-icon" src="./images/icons/search.svg" width="20" height="20" alt="Иконка поиска.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#000" d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/>
+                </svg>
+
               </a>
             </li>
             <li class="button-item">
               <a class="button-favorite" href="#">
                 <span class="counter">12</span>
                 <span class="visually-hidden">Избранное.</span>
-                <img class="search-icon" src="./images/icons/favorite.svg" width="18" height="17" alt="Иконка сердечко.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+                  <path fill="#000" d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                </svg>
               </a>
             </li>
             <li class="button-item-want">
@@ -49,103 +54,103 @@
 
       <main class="page-main">
         <section class="main-section">
-        <div class="section-content">
-          <h1 class="catalog-header">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs-list">
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="./index.html">
-                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="Vector">
-                      <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                        fill="white" />
-                      <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
-                    </g>
-                  </svg>
-                  <span class="visually-hidden">Главная страница.</span>
-                </a>
-              </li>
-              <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="./catalog.html">Гостиницы</a>
-              </li>
-            </ul>
+          <div class="section-content">
+            <h1 class="catalog-header">Гостиницы Седоны</h1>
+              <ul class="breadcrumbs-list">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="./index.html">
+                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Vector">
+                        <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                          fill="white" />
+                        <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
+                      </g>
+                    </svg>
+                    <span class="visually-hidden">Главная страница.</span>
+                  </a>
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="./catalog.html">Гостиницы</a>
+                </li>
+              </ul>
           </div>
 
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="GET" data-test="filter">
+            <div class="search-form-wrapper">
+              <fieldset class="search-form-section">
+                <legend class="search-form-section-title">Инфраструктура:</legend>
+                <ul class="infrastructure-list">
+                  <li class="infrastructure-item">
+                    <input class="infrastructure-input visually-hidden" type="checkbox" id="pool-checkbox" name="infrastructure" value="pool" checked>
+                    <label class="infrastructure-name" for="pool-checkbox">Бассейн</label>
+                  </li>
+                  <li class="infrastructure-item">
+                    <input class="infrastructure-input  visually-hidden" type="checkbox" id="parking-checkbox" name="infrastructure" value="parking" checked>
+                    <label class="infrastructure-name" for="parking-checkbox">Парковка</label>
+                  </li>
+                  <li class="infrastructure-item">
+                    <input class="infrastructure-input  visually-hidden" type="checkbox" id="wifi-checkbox" name="infrastructure" value="wifi">
+                    <label class="infrastructure-name" for="wifi-checkbox">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="search-form-section">
+                <legend class="search-form-section-title">Тип жилья:</legend>
+                <ul class="home-type-list">
+                  <li class="home-type-item">
+                    <input class="home-type-input visually-hidden" name="home-type" type="radio" id="hotel-radio" value="hotel" checked>
+                    <label class="home-type-name" for="hotel-radio">Гостиница</label>
+                  </li>
+                  <li class="home-type-item">
+                    <input class="home-type-input visually-hidden" name="home-type" type="radio" id="motel-radio" value="motel">
+                    <label class="home-type-name" for="motel-radio">Мотель</label>
+                  </li>
+                  <li class="home-type-item">
+                    <input class="home-type-input visually-hidden" name="home-type" type="radio" id="apartment-radio" value="apartment">
+                    <label class="home-type-name" for="apartment-radio">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
+          </div>
+
           <div class="search-form-wrapper">
             <fieldset class="search-form-section">
-              <legend class="search-form-section-title">Инфраструктура:</legend>
-              <ul class="infrastructure-list">
-                <li class="infrastructure-item">
-                  <input class="infrastructure-input visually-hidden" type="checkbox" id="pool-checkbox" name="infrastructure" value="pool" checked>
-                  <label class="infrastructure-name" for="pool-checkbox">Бассейн</label>
-                </li>
-                <li class="infrastructure-item">
-                  <input class="infrastructure-input  visually-hidden" type="checkbox" id="parking-checkbox" name="infrastructure" value="parking" checked>
-                  <label class="infrastructure-name" for="parking-checkbox">Парковка</label>
-                </li>
-                <li class="infrastructure-item">
-                  <input class="infrastructure-input  visually-hidden" type="checkbox" id="wifi-checkbox" name="infrastructure" value="wifi">
-                  <label class="infrastructure-name" for="wifi-checkbox">Wi-Fi</label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="search-form-section">
-              <legend class="search-form-section-title">Тип жилья:</legend>
-              <ul class="home-type-list">
-                <li class="home-type-item">
-                  <input class="home-type-input visually-hidden" name="home-type" type="radio" id="hotel-radio" value="hotel" checked>
-                  <label class="home-type-name" for="hotel-radio">Гостиница</label>
-                </li>
-                <li class="home-type-item">
-                  <input class="home-type-input visually-hidden" name="home-type" type="radio" id="motel-radio" value="motel">
-                  <label class="home-type-name" for="motel-radio">Мотель</label>
-                </li>
-                <li class="home-type-item">
-                  <input class="home-type-input visually-hidden" name="home-type" type="radio" id="apartment-radio" value="apartment">
-                  <label class="home-type-name" for="apartment-radio">Апартаменты</label>
-                </li>
-              </ul>
-            </fieldset>
-        </div>
+                <legend class="search-form-section-title">Стоимость,₽: </legend>
 
-        <div class="search-form-wrapper">
-          <fieldset class="search-form-section">
-              <legend class="search-form-section-title">Стоимость,₽</legend>
+                <div class="price-wrapper">
+                  <div class="price-input-wrapper">
+                    <input class="price-input from" type="number" id="from" name="from" min="0">
+                    <label class="price-input-name" for="from">от</label>
+                  </div>
 
-              <div class="price-wrapper">
-                <div class="price-input-wrapper">
-                  <input class="price-input from" type="number" id="from" name="from" min="0">
-                  <label class="price-input-name" for="from">от</label>
+                  <div class="price-input-wrapper">
+                    <input class="price-input to" type="number" id="to" name="to" min="0">
+                    <label class="price-input-name" for="to">до</label>
+                  </div>
                 </div>
 
-                <div class="price-input-wrapper">
-                  <input class="price-input to" type="number" id="to" name="to" min="0">
-                  <label class="price-input-name" for="to">до</label>
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 10px; width: 220px;">
+                    <button type="button" class="range-button range-button-left">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+
+                    <button type="button" class="range-button range-button-right">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
                 </div>
-              </div>
+              </fieldset>
 
-              <div class="range-scale">
-                <div class="range-bar" style="left: 10px; width: 220px;">
-                  <button type="button" class="range-button range-button-left">
-                    <span class="visually-hidden">Изменить минимальную цену.</span>
-                  </button>
-
-                  <button type="button" class="range-button range-button-right">
-                    <span class="visually-hidden">Изменить максимальную цену.</span>
-                  </button>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset class="search-form-section search-form-section-buttons">
-              <button class="submit-button-catalog" type="submit">Применить</button>
-              <button class="reset-button" type="reset">Сбросить</button>
-            </fieldset>
-        </div>
-        </form>
+              <fieldset class="search-form-section search-form-section-buttons">
+                <button class="submit-button-catalog" type="submit">Применить</button>
+                <button class="reset-button" type="reset">Сбросить</button>
+              </fieldset>
+            </div>
+          </form>
         </section>
 
-        <section class="search-results-section">
+        <section class="search-results-section" data-test="catalog">
           <div class="search-results-header">
             <h2 class="search-results-title">Найдено гостиниц: 38</h2>
             <div class="search-results-settings">
@@ -155,21 +160,18 @@
               </select>
               <ul class="search-results-change-view">
                 <li class="change-view-item">
-                  <a class="change-view-button selected-view" href="#">
+                  <a class="change-view-button selected-view tiles" href="#">
                     <span class="visually-hidden">Плитка.</span>
-                    <img class="change-icons" src="./images/icons/icon-tiles.svg" width="16" height="14" alt="Иконка-плитка.">
                   </a>
                 </li>
                 <li class="change-view-item">
-                  <a class="change-view-button" href="#">
+                  <a class="change-view-button window" href="#">
                     <span class="visually-hidden">Карточки.</span>
-                    <img class="change-icons" src="./images/icons/icon-window.svg" width="16" height="14" alt="Иконка-окошко.">
                   </a>
                 </li>
                 <li class="change-view-item">
-                  <a class="change-view-button" href="#">
+                  <a class="change-view-button list" href="#">
                     <span class="visually-hidden">Список.</span>
-                    <img class="change-icons" src="./images/icons/icon-list.svg" width="16" height="14" alt="Иконка-список.">
                   </a>
                 </li>
               </ul>
@@ -193,20 +195,20 @@
                   </div>
                   <div class="rating-wrapper">
                   <ul class="rating-list">
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 1</span>
                     </li>
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 2</span>
                     </li>
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 3</span>
                     </li>
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 4</span>
                     </li>
-                    <li>
-                      <img class="rating-star visually-hidden" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star visually-hidden">
+                      <span class="visually-hidden">Звезда рейтинга 5</span>
                     </li>
                   </ul>
                     <span class="rating-text">Рейтинг: 8,5</span>
@@ -231,20 +233,20 @@
 
                   <div class="rating-wrapper">
                     <ul class="rating-list">
-                      <li>
-                        <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                      <li class="rating-star">
+                        <span class="visually-hidden">Звезда рейтинга 1</span>
                       </li>
-                      <li>
-                        <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                      <li class="rating-star">
+                        <span class="visually-hidden">Звезда рейтинга 2</span>
                       </li>
-                      <li>
-                        <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                      <li class="rating-star">
+                        <span class="visually-hidden">Звезда рейтинга 3</span>
                       </li>
-                      <li>
-                        <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                      <li class="rating-star">
+                        <span class="visually-hidden">Звезда рейтинга 4</span>
                       </li>
-                      <li>
-                        <img class="visually-hidden" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                      <li class="rating-star visually-hidden">
+                        <span class="visually-hidden">Звезда рейтинга 5</span>
                       </li>
                     </ul>
 
@@ -269,20 +271,21 @@
                   </div>
                   <div class="rating-wrapper">
                   <ul class="rating-list">
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 1</span>
                     </li>
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 2</span>
                     </li>
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 3</span>
                     </li>
-                    <li>
-                      <img class="visually-hidden" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star visually-hidden">
+                      <span class="visually-hidden">Звезда рейтинга 4</span>
                     </li>
-                    <li>
-                      <img class="visually-hidden" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star visually-hidden">
+                      <span class="visually-hidden">Звезда рейтинга 5</span>
+                    </li>
                     </li>
                   </ul>
                     <span class="rating-text">Рейтинг: 6,9</span>
@@ -306,20 +309,21 @@
                   </div>
                   <div class="rating-wrapper">
                   <ul class="rating-list">
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 1</span>
                     </li>
-                    <li>
-                      <img class="rating-star" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star">
+                      <span class="visually-hidden">Звезда рейтинга 2</span>
                     </li>
-                    <li>
-                      <img class="visually-hidden" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star visually-hidden">
+                      <span class="visually-hidden">Звезда рейтинга 3</span>
                     </li>
-                    <li>
-                      <img class="visually-hidden" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star visually-hidden">
+                      <span class="visually-hidden">Звезда рейтинга 4</span>
                     </li>
-                    <li>
-                      <img class="visually-hidden" src="./images/icons/icon-star.svg" width="18" height="17" alt="звездочка.">
+                    <li class="rating-star visually-hidden">
+                      <span class="visually-hidden">Звезда рейтинга 5</span>
+                    </li>
                     </li>
                   </ul>
                     <span class="rating-text">Рейтинг: 5,0</span>
@@ -354,7 +358,7 @@
       </main>
 
       <footer class="main-footer">
-        <section class="mailing-list no-picture">
+        <section class="mailing-list no-picture" data-test="subscribe">
           <div class="mailing-list-wrapper">
             <h2 class="mailing-list-header about-page heading-level-two">Подпишитесь на рассылку</h2>
             <p class="mailing-list-text about-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -370,7 +374,7 @@
           </div>
         </section>
 
-        <div class="social-list-wrapper">
+        <div class="social-list-wrapper" data-test="footer">
           <ul class="social-list">
               <li class="social-list-item">
                 <a class="social-link" href=" https://vk.com/htmlacademy">
@@ -404,9 +408,7 @@
               </li>
           </ul>
 
-          <a class="footer-tel" href="tel:+78128121212">
-            +7 (812)-812-12-12
-          </a>
+          <a class="footer-tel" href="tel:+78128121212">+7&nbsp;(812)&nbsp;812-12-12</a>
 
           <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
             <span class="visually-hidden">
