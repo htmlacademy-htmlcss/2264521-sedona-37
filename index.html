@@ -30,14 +30,19 @@
             <li class="button-item">
               <a class="button-search" href="#">
                 <span class="visually-hidden">Поиск.</span>
-                <img class="search-icon" src="./images/icons/search.svg" width="20" height="20" alt="Иконка поиска.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                  <path fill="#000" d="m19.5 18-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/>
+                </svg>
+
               </a>
             </li>
             <li class="button-item">
               <a class="button-favorite" href="#">
                 <span class="counter">12</span>
                 <span class="visually-hidden">Избранное.</span>
-                <img class="search-icon" src="./images/icons/favorite.svg" width="18" height="17" alt="Иконка сердечко.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none">
+                  <path fill="#000" d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                </svg>
               </a>
             </li>
             <li class="button-item-want">
@@ -93,7 +98,7 @@
               <li class="advantages-item advantages-item-image-left">
                 <img class="advantages-image" src="./images/photo-2.jpg" width="800" height="385" alt="Фотография каньона.">
                 <div class="advantages-wrapper">
-                  <h3 class="advantages-title">Там есть мост дьявола</h3>
+                  <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
                   <p class="advantages-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
               </li>
@@ -110,20 +115,17 @@
           <section class="further-benefits">
             <h2 class="visually-hidden">Дополнительные преимущества.</h2>
             <ul class="benefits-list">
-              <li class="benefits-item-blue">
-                <img class="benefits-icons" src="./images/icons/icon-home.svg" width="75" height="72" alt="Иконка домика.">
-                <h3 class="benefits-title">Жилье</h3>
-                <p class="about-benefits">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              <li class="benefits-item-blue benefits-item home">
+                <h3 class="benefits-title">Жильё</h3>
+                <p class="about-benefits">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в&nbsp;кино!</p>
               </li>
-              <li class="benefits-item-white">
-                <img class="benefits-icons" src="./images/icons/food.svg" width="75" height="72" alt="Иконка бургера.">
+              <li class="benefits-item-white benefits-item food">
                 <h3 class="benefits-title">Еда</h3>
-                <p class="about-benefits">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+                <p class="about-benefits">Всегда заказывайте топовый&nbsp;фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
               </li>
-              <li class="benefits-item-blue">
-                <img class="benefits-icons" src="./images/icons/icon-gift.svg" width="75" height="72" alt="Иконка подарка.">
+              <li class="benefits-item-blue benefits-item gift">
                 <h3 class="benefits-title">Сувениры</h3>
-                <p class="about-benefits">Не только китайского, но и настоящего местного производства!</p>
+                <p class="about-benefits">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
               </li>
             </ul>
           </section>
@@ -132,7 +134,7 @@
         <section class="booking" data-test="search">
           <div class="booking-wrapper">
             <h2 class="about-page heading-level-two">Заинтересовались?</h2>
-            <p class="about-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <p class="about-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <a class="button-hotel-search" href="#">Поиск гостиницы в Седоне</a>
           </div>
         </section>
@@ -189,9 +191,7 @@
               </li>
           </ul>
 
-          <a class="footer-tel" href="tel:+78128121212">
-            +7 (812)-812-12-12
-          </a>
+          <a class="footer-tel" href="tel:+78128121212">+7&nbsp;(812)&nbsp;812-12-12</a>
 
           <a class="footer-logo-htmlacademy" href="https://htmlacademy.ru/">
             <span class="visually-hidden">
