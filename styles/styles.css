@@ -95,9 +95,12 @@ html {
   display: block;
 }
 
-.header-link:hover,
-.header-link:active {
+.header-link:hover {
   opacity: .8;
+}
+
+.header-link:active {
+  opacity: .3;
 }
 
 .welcome-svg {
