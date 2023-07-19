@@ -103,6 +103,10 @@ html {
   opacity: .3;
 }
 
+.header-link:focus-visible {
+  outline: 2px solid #68a2ca;
+}
+
 .welcome-svg {
   display: block;
   margin: 0 auto;
@@ -122,6 +126,21 @@ html {
 
 .header-buttons-list .button-favorite {
   position: relative;
+}
+
+.button-search:hover,
+.button-favorite:hover {
+  opacity: 0.8;
+}
+
+.button-search:active,
+.button-favorite:active {
+  opacity: 0.5;
+}
+
+.button-search:focus-visible,
+.button-favorite:focus-visible {
+  outline: 2px solid #68a2ca;
 }
 
 .button-favorite .counter {
