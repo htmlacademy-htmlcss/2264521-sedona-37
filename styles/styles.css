@@ -94,15 +94,17 @@ html {
   top: 21px;
   display: block;
 }
-
+.main-logo:hover,
 .header-link:hover {
   opacity: .8;
 }
 
+.main-logo:active,
 .header-link:active {
-  opacity: .3;
+  opacity: .5;
 }
 
+.main-logo:focus-visible,
 .header-link:focus-visible {
   outline: 2px solid #68a2ca;
 }
